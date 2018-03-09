@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.slalom.pgbbootcamp" 
+        android-versionCode = "1" 
+        version     = "1.0.0">
+        
+    <name>PhoneGap Build Bootcamp App</name>
+
+    <description>
+        This sample app is used in conjunction with the Slalom PhoneGap Build Bootcamp.
+	</description>
+
+    <author href="http://www.slalom.com" email="noreply@slalom.com">
+        Your Author Name
+    </author>
+
+    <!-- Build preferences for each platform. Too many to list here, see online PhoneGap docs for more. -->
+	<preference name='phonegap-version' value='cli-7.0.1' /> <!-- Version of PhoneGap to use -->
+	
+	<!-- The platforms to build for. Only build what you want to target! -->
+	<platform name="ios">
+		<!-- Icons for iOS 8.0+, iPhone 6 / 6+ -->
+		<icon src="www/icons/ios/icon-60@3x.png" width="180" height="180" />
+		<!-- iOS 7.0+ -->
+		<!-- iPhone / iPod Touch  -->
+		<icon src="www/icons/ios/icon-60.png" width="60" height="60" />
+		<icon src="www/icons/ios/icon-60@2x.png" width="120" height="120" />
+		<!-- iPad -->
+		<icon src="www/icons/ios/icon-76.png" width="76" height="76" />
+		<icon src="www/icons/ios/icon-76@2x.png" width="152" height="152" />
+		<!-- Spotlight Icon -->
+		<icon src="www/icons/ios/icon-40.png" width="40" height="40" />
+		<icon src="www/icons/ios/icon-40@2x.png" width="80" height="80" />
+		<!-- iOS 6.1 -->
+        <!-- iPhone / iPod Touch -->
+        <icon src="www/icons/ios/icon.png" width="57" height="57" />
+        <icon src="www/icons/ios/icon@2x.png" width="114" height="114" />
+		<!-- iPad -->
+        <icon src="www/icons/ios/icon-72.png" width="72" height="72" />
+        <icon src="www/icons/ios/icon-72@2x.png" width="144" height="144" />
+		<!-- iPhone Spotlight and Settings Icon -->
+		<icon src="www/icons/ios/icon-small.png" width="29" height="29" />
+		<icon src="www/icons/ios/icon-small@2x.png" width="58" height="58" />
+		<!-- iPad Spotlight and Settings Icon -->
+        <icon src="www/icons/ios/icon-50.png" width="50" height="50" />
+        <icon src="www/icons/ios/icon-50@2x.png" width="100" height="100" />
+		<!-- iPad Pro -->
+        <icon src="www/icons/ios/icon-83.5@2x.png" width="167" height="167" />
+
+		<!-- iPhone and iPod touch -->
+		<splash src="www/splash/ios/Default~iphone.png" platform="ios" width="320" height="480" />
+		<splash src="www/splash/ios/Default@2x~iphone.png" platform="ios" width="640" height="960" />
+
+		<!-- iPhone 5 / iPod Touch (5th Generation) -->
+		<splash src="www/splash/ios/Default-568h@2x~iphone.png" platform="ios" width="640" height="1136" />
+
+		<!-- iPhone 6 -->
+		<splash src="www/splash/ios/Default-667h.png" platform="ios" width="750" height="1334" />
+		<splash src="www/splash/ios/Default-736h.png" platform="ios" width="1242" height="2208" />
+		<splash src="www/splash/ios/Default-Landscape-736h.png" platform="ios" width="2208" height="1242" />
+
+		<!-- iPad -->
+		<splash src="www/splash/ios/Default-Portrait~ipad.png" platform="ios" width="768" height="1024" />
+		<splash src="www/splash/ios/Default-Landscape~ipad.png" platform="ios" width="1024" height="768" />
+
+		<!-- Retina iPad -->
+		<splash src="www/splash/ios/Default-Portrait@2x~ipad.png" platform="ios" width="1536" height="2048" />
+		<splash src="www/splash/ios/Default-Landscape@2x~ipad.png" platform="ios" width="2048" height="1536" />
+	</platform>
+	
+	<!-- Android -->
+	<platform name="android">
+		<!--
+            ldpi    : 36x36 px
+            mdpi    : 48x48 px
+            hdpi    : 72x72 px
+            xhdpi   : 96x96 px
+            xxhdpi  : 144x144 px
+            xxxhdpi : 192x192 px
+        -->
+		<icon src="www/icons/android/ldpi.png" density="ldpi" />
+		<icon src="www/icons/android/mdpi.png" density="mdpi" />
+		<icon src="www/icons/android/hdpi.png" density="hdpi" />
+		<icon src="www/icons/android/xhdpi.png" density="xhdpi" />
+		<icon src="www/icons/android/xxhdpi.png" density="xxhdpi" />
+		<icon src="www/icons/android/xxxhdpi.png" density="xxhdpi" />
+
+		<!-- Android -->
+		<splash src="www/splash/android/drawable-port-ldpi-screen.png" platform="android" density="ldpi" />
+		<splash src="www/splash/android/drawable-port-mdpi-screen.png" platform="android" density="mdpi" />
+		<splash src="www/splash/android/drawable-port-hdpi-screen.png" platform="android" density="hdpi" />
+		<splash src="www/splash/android/drawable-port-xhdpi-screen.png" platform="android" density="xhdpi" />
+		<splash src="www/splash/android/drawable-port-xxhdpi-screen.png" platform="android" density="port-xxhdpi" />
+		<splash src="www/splash/android/drawable-land-xxhdpi-screen.png" platform="android" density="land-xxhdpi" />
+	</platform>
+
+	<!-- Camera -->
+	<plugin name="cordova-plugin-camera" source="npm" spec="2.4.1" />
+	<!-- Whitelist -->
+	<plugin name="cordova-plugin-whitelist" source="npm" spec="1.2.1"  />
+</widget>
