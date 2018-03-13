@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.slalom.pgbbootcamp" 
+        id          = "com.simpleprogrammer.crossplatapp" 
         android-versionCode = "1" 
         version     = "1.0.0">
         
-    <name>PhoneGap Build Bootcamp App</name>
+    <name>Simple Programmer Cross-platform Camera app</name>
 
     <description>
-        This sample app is used in conjunction with the Slalom PhoneGap Build Bootcamp.
+        This sample app is used in conjunction with the SP cross-platform development article by Matt Netkow.
 	</description>
 
-    <author href="http://www.slalom.com" email="noreply@slalom.com">
+    <author href="http://www.example.com" email="noreply@example.com">
         Your Author Name
     </author>
 
