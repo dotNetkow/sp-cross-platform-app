@@ -18,53 +18,35 @@
 </head>
 <body onload="initialize();">
 	<div data-role="view" id="drawer-home" data-title="Picture Viewer">
-		<header data-role="header" style="padding-top:25px">
-			<div data-role="navbar">
-				<a data-role="button" data-rel="drawer" href="#my-drawer" data-icon="hamburger" data-align="left"></a>
-				<span data-role="view-title"></span>
-			</div>
-		</header>
-
 		<div id="mainContent" class="mainContent">
 			<img id="curImage" class="currentImage"  />
-			<hr></hr>
-			<div id="imageCarousel"></div>
 		</div>
 
 		<div data-role="footer">
 			<div data-role="tabstrip">
-				<a id="btnAddPic" data-role="button" data-icon="add" onclick="controller.takePictureForCarousel();"></a>
-			</div>
-		</div>
-	</div>
-
-	<div data-role="view" id="drawer-single" data-title="Single Image">
-	<img id="soloImage" class="singleImage" />
-
-		<div data-role="footer">
-			<div data-role="tabstrip">
-				<a id="btnAddPic" data-role="button" data-icon="add" onclick="controller.takePictureForSingle();"></a>
+				<a id="btnAddPic" data-role="button" data-icon="add" onclick="controller.takePicture();"></a>
 			</div>
 		</div>
 	</div>
 
 	<div data-role="view" id="drawer-about" data-title="About">
 		<ul data-role="listview" data-style="inset" data-type="group">
-			<li>SP
+			<li>Cross-platform mobile app sample
 				<ul>
 					<li>This is the sample application for Simple Programmer. </li>
-					<li>This app allows the user to take a picture, cache it, and add it to a carousel of pictures.</li>
+					<li>This app allows the user to take a picture using the device's camera and caches it for later retrieval.
+					</li>
 				</ul>
+			</li>
         </ul>
 	</div>
 
 	<!-- Define the drawer -->
-	<div data-role="drawer" id="my-drawer" data-views="['drawer-home', 'drawer-single', 'drawer-about', 'index.html']">
+	<div data-role="drawer" id="my-drawer" data-views="['drawer-home', 'drawer-about', 'index.html']">
 	    <ul data-role="listview" data-type="group">
 	        <li>Main
 	            <ul>
-	                <li data-icon="home"><a href="#drawer-home" data-transition="none">Image Carousel</a></li>
-					<li data-icon="home"><a href="#drawer-single" data-transition="none">Single Image Viewer</a></li>
+	                <li data-icon="home"><a href="#drawer-home" data-transition="none">Photo Viewer</a></li>
 	                <li data-icon="info"><a href="#drawer-about" data-transition="none">About</a></li>
 	            </ul>
 	        </li>

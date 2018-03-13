@@ -20,8 +20,3 @@ body {
     margin: 20px;
     overflow: auto;
 }
-
-.singleImage {
-    max-width: 90%;
-	max-height: 90%;
-}
