@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	
+	<meta http-equiv="Content-Security-Policy" 
+		content="default-src 
+				'self' 
+				gap:
+				'unsafe-eval' 
+				'unsafe-inline';">
+
+	<!-- Kendo UI Mobile styles for all supported platforms -->
+    <link href="styles/kendo.mobile.all.min.css" rel="stylesheet">
+    <!-- This app's styles -->
+	<link href="styles/main.css" rel="stylesheet" /> 
+</head>
+<body onload="initialize();">
+	<div data-role="view" id="drawer-home" data-title="Photo Viewer">
+		<div id="mainContent" class="mainContent">
+			<img id="curImage" class="currentImage"  />
+		</div>
+
+		<div data-role="footer">
+			<div data-role="tabstrip">
+				<a id="btnAddPic" data-role="button" data-icon="add" onclick="controller.takePicture();"></a>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="view" id="drawer-about" data-title="About">
+		<ul data-role="listview" data-style="inset" data-type="group">
+			<li>Cross-platform mobile app sample
+				<ul>
+					<li>This is the sample application for Simple Programmer. </li>
+					<li>This app allows the user to take a picture using the device's camera and caches it for later retrieval.
+					</li>
+				</ul>
+			</li>
+        </ul>
+	</div>
+
+	<!-- Define the drawer -->
+	<div data-role="drawer" id="my-drawer" data-views="['drawer-home', 'drawer-about', 'index.html']">
+	    <ul data-role="listview" data-type="group">
+	        <li>Main
+	            <ul>
+	                <li data-icon="home"><a href="#drawer-home" data-transition="none">Photo Viewer</a></li>
+	                <li data-icon="info"><a href="#drawer-about" data-transition="none">About</a></li>
+	            </ul>
+	        </li>
+	    </ul>
+	</div>
+	
+	<!-- Define the header and footer -->
+	<div data-role="layout" data-id="drawer-layout">
+		<header data-role="header">
+			<div data-role="navbar">
+				<a data-role="button" data-rel="drawer" href="#my-drawer" data-icon="hamburger" data-align="left"></a>
+				<span data-role="view-title"></span>
+			</div>
+		</header>
+	</div>
+
+	<!-- PG Build service injects this (do not include yourself!), but still need a reference here -->
+	<script src="cordova.js"></script>
+	<!-- Kendo UI JavaScript -->
+    <script src="scripts/jquery.min.js"></script>
+    
+    <script src="scripts/kendo.all.min.js"></script>
+    
+	<script src="scripts/controller.js"></script>
+</body>
+</html>

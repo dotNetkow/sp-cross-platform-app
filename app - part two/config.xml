@@ -2,7 +2,6 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.simpleprogrammer.crossplatapp" 
-        android-versionCode = "1" 
         version     = "1.0.0">
         
     <name>Simple Programmer Cross-platform Camera app</name>
@@ -16,7 +15,7 @@
     </author>
 
     <!-- Build preferences for each platform. Too many to list here, see online PhoneGap docs for more. -->
-	<preference name='phonegap-version' value='cli-7.0.1' /> <!-- Version of PhoneGap to use -->
+	<preference name='phonegap-version' value='cli-8.0.0' /> <!-- Version of PhoneGap to use -->
 	
 	<!-- The platforms to build for. Only build what you want to target! -->
 	<platform name="ios">
@@ -95,8 +94,6 @@
 		<splash src="www/splash/android/drawable-land-xxhdpi-screen.png" platform="android" density="land-xxhdpi" />
 	</platform>
 
-	<!-- Camera -->
-	<plugin name="cordova-plugin-camera" source="npm" spec="2.4.1" />
-	<!-- Whitelist -->
-	<plugin name="cordova-plugin-whitelist" source="npm" spec="1.2.1"  />
+	<!-- https://www.npmjs.com/package/cordova-plugin-camera -->
+	<plugin name="cordova-plugin-camera" source="npm" spec="4.0.2" />
 </widget>
