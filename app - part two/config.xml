@@ -78,12 +78,12 @@
             xxhdpi  : 144x144 px
             xxxhdpi : 192x192 px
         -->
-		<icon src="www/icons/android/ldpi.png" density="ldpi" />
-		<icon src="www/icons/android/mdpi.png" density="mdpi" />
-		<icon src="www/icons/android/hdpi.png" density="hdpi" />
-		<icon src="www/icons/android/xhdpi.png" density="xhdpi" />
-		<icon src="www/icons/android/xxhdpi.png" density="xxhdpi" />
-		<icon src="www/icons/android/xxxhdpi.png" density="xxhdpi" />
+		<icon src="www/icons/android/drawable-ldpi-icon.png" density="ldpi" />
+		<icon src="www/icons/android/drawable-mdpi-icon.png" density="mdpi" />
+		<icon src="www/icons/android/drawable-hdpi-icon.png" density="hdpi" />
+		<icon src="www/icons/android/drawable-xhdpi-icon.png" density="xhdpi" />
+		<icon src="www/icons/android/drawable-xxhdpi-icon.png" density="xxhdpi" />
+		<icon src="www/icons/android/drawable-xxxhdpi-icon.png" density="xxhdpi" />
 
 		<!-- Android -->
 		<splash src="www/splash/android/drawable-port-ldpi-screen.png" platform="android" density="ldpi" />
